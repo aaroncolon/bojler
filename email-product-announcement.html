@@ -121,7 +121,7 @@
       }
 
       p {
-        margin: 0 0 20px !important;
+        margin: 0 0 20px;
       }
 
       a {
@@ -159,6 +159,13 @@
         padding: 0;
       }
 
+      hr.hr--short {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 250px;
+        width: 100%;
+      }
+
       img {
         margin-bottom: 25px;
         margin-top: 25px;
@@ -181,11 +188,57 @@
         padding-top: 45px;
       }
 
+      .footer {
+        background-color: rgb(244, 244, 246); 
+        padding: 50px;
+        text-align: center;
+      }
+
+      .footer hr {
+        margin-bottom: 25px;
+        margin-top: 25px;
+      }
+
+      .hiring {
+        margin-bottom: 30px;
+      }
+
+      .cta--follow-us {
+        color: rgb(159, 164, 180);
+        font-weight: bold;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .social-icons img {
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+
+      .address {
+        color: rgb(159, 164, 180);
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
 
 
-      @media screen and (max-width: 600px){
+      @media screen and (max-width: 600px) {
+        img {
+          max-width: 100%;
+          height: auto;
+        }
+
         .container {
           width: 100% !important;
+        }
+
+        .social-icons {
+          width: 220px !important;
+        }
+
+        .social-icons img {
+          height: auto !important;
+          width: auto !important;
         }
       }
     </style>
@@ -214,6 +267,49 @@
                 <img class="center--block" src="http://via.placeholder.com/460x300">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#">Sed euismod orci ex</a>, nec ullamcorper sem mollis sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod orci ex, nec ullamcorper sem mollis sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod orci ex, nec ullamcorper sem mollis sit amet.</p>
                 <hr>
+              </td>
+            </tr>
+            <tr>
+              <td class="footer">
+                <p class="hiring"><a href="#">Hey there, we're hiring!</a></p>
+                <hr class="hr--short">
+
+                <p class="cta--follow-us">Follow Us:</p>
+
+                <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                  <tr>
+                    <td align="center" valign="middle">
+                      <table class="social-icons" width="160" border="0" cellpadding="0" cellspacing="0">
+                        <tr>
+                          <td align="center">
+                            <a target="_blank" href="https://www.facebook.com/zypevideo/">
+                              <img height="32" width="32" src="http://go.zype.com/rs/627-DAI-818/images/Social-fb-46x46.png">
+                            </a>
+                          </td>
+                          <td align="center">
+                            <a target="_blank" href="https://twitter.com/zype">
+                              <img height="32" width="32" src="http://go.zype.com/rs/627-DAI-818/images/Social-twitter-46x46.png">
+                            </a>
+                          </td>
+                          <td align="center">
+                            <a target="_blank" href="https://www.linkedin.com/company/zype-inc">
+                              <img height="32" width="32" src="http://go.zype.com/rs/627-DAI-818/images/Social-linkedin-46x46.png">
+                            </a>
+                          </td>
+                          <td align="center">
+                            <a target="_blank" href="http://www.zype.com/blog/">
+                              <img height="32" width="32" src="http://go.zype.com/rs/627-DAI-818/images/Social-blog-46x46.png">
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+
+                <hr class="hr--short">
+
+                <p class="address">Zype Inc., 145 W 28th Street, Fourth Floor, New York, NY 10001</p>
               </td>
             </tr>
           </table>
